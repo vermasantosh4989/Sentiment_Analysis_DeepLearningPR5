@@ -868,43 +868,6 @@ The recommendation depends on the evaluation priorities. If recall is the domina
 <sub>Figure 19 — Combined training curves for the recurrent models.</sub>
 
 </div>
-
-## Charts and Evidence
-
-All screenshot links in this README use the requested relative directory, `plot/`. Place the image files in that folder and keep the filenames exactly as written below (including capitalization, underscores, ampersands, and spelling).
-
-| Screenshot file | Recommended location / purpose |
-|---|---|
-| `Distribution_imbd_review.png` | Task 1 — review-length distribution and text exploration |
-| `sentiment_review.png` | Task 7 — example reviews and prediction inspection |
-| `ANN_Training&Validation_accuracy.png` | Task 2 — ANN accuracy curves |
-| `ANN_Training&Validation_loss.png` | Task 2 — ANN loss curves |
-| `RNN_hidden_states.png` | Task 2 — recurrent hidden-state illustration |
-| `SimpleRNN_loss_&_Accuracy.png` | Task 3 — SimpleRNN training performance |
-| `SimpleRNN_confusion_matrix.png` | Task 3 — SimpleRNN classification results |
-| `SimpleRNN_gradient_norm.png` | Task 4 — SimpleRNN gradient norms |
-| `SimpleRNN_loss_with_vs_without_gradient.png` | Task 4 — gradient clipping comparison |
-| `sequence_length_robustness.png` | Tasks 4 and 7 — performance across sequence lengths |
-| `Gradint_simplernn_vs_lstm.png` | Task 5 — SimpleRNN versus LSTM gradient comparison |
-| `LSTM_loss_vs_accuracy.png` | Task 5 — LSTM training curves |
-| `LSTM_confusion_matrix.png` | Task 5 — LSTM classification results |
-| `LSTM_hidden_states_gradint_loss.png` | Task 5 — LSTM hidden-state / gradient experiment |
-| `Stacked_LSTM_loss_vs_accuracy.png` | Task 5 — stacked LSTM training curves |
-| `Stacked_LSTM_confusion_matrix.png` | Task 5 — stacked LSTM classification results |
-| `GRU_loss_vs_accuracy.png` | Task 6 — GRU training curves |
-| `GRU_confusion_matrix.png` | Task 6 — GRU classification results |
-| `Gradient_flow_simpleRNN_vs_LSTM_VS_GRU.png` | Tasks 4–6 — recurrent gradient-flow comparison |
-| `accuracy_vs_hidden_units.png` | Task 6 — model capacity experiment |
-| `roc_curve_comparison.png` | Task 7 — ROC curve comparison |
-
-### Screenshot setup checklist
-
-1. Create a folder named `plot` beside `README.md`.
-2. Copy the 21 screenshot files into `plot/`.
-3. Keep the spelling and letter case exactly as listed above.
-4. Preview the README in VS Code or GitHub to confirm that every image renders.
-5. If a filename on disk differs, rename the image or update the Markdown link to match the actual filename.
-
 ---
 
 
