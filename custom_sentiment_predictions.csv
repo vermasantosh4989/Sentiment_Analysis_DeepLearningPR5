@@ -1,0 +1,7 @@
+Review,Pattern,Expected,Predicted,Positive Probability,Correct
+This movie was absolutely wonderful and I loved every moment.,Clearly positive,Positive,Positive,0.9399,True
+"This film was boring, disappointing, and a complete waste of time.",Clearly negative,Negative,Negative,0.0154,True
+This film is not good.,Negation,Negative,Negative,0.4895,True
+I cannot say that this movie was not enjoyable.,Double negation,Positive,Positive,0.6418,True
+Wonderful movie! I just love wasting two hours on something this terrible.,Sarcasm,Negative,Negative,0.0596,True
+Loved it!,Very short,Positive,Positive,0.6948,True
