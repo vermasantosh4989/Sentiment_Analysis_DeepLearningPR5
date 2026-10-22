@@ -252,14 +252,6 @@ Pre-padding inserts zeros at the beginning of shorter sequences. Pre-truncation 
 
 Before training, inspect the resulting array dimensions and confirm that the input and target rows line up.
 
-Checklist:
-
-- [ ] Train and test data contain the expected number of records.
-- [ ] Token IDs are integer values.
-- [ ] Every padded sequence has the configured length.
-- [ ] Labels are encoded consistently.
-- [ ] The tokenizer was fitted only on training text.
-- [ ] The test partition was not used to fit model parameters.
 
 **Task 1 outcome:** review text is represented as fixed-length token sequences ready for neural-network experiments.
 
@@ -852,96 +844,6 @@ The recommendation depends on the evaluation priorities. If recall is the domina
 <sub>Figure 19 — Combined training curves for the recurrent models.</sub>
 
 </div>
-
-
-
-
-### Task 1 — Text preparation review checklist
-
-These points can be used when checking the Task 1 notebook section before submission:
-
-- [ ] Check the original columns before selecting the fields used by the model.
-- [ ] Inspect missing values and target counts before cleaning.
-- [ ] Remove exact duplicates before creating the held-out test partition.
-- [ ] Apply the same cleaning rules to training, test, and future user input.
-- [ ] Fit the tokenizer only on the training text.
-- [ ] Check the final padded sequence shape before model construction.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
-
-### Task 2 — Baseline and recurrence review checklist
-
-These points can be used when checking the Task 2 notebook section before submission:
-
-- [ ] Record the baseline metrics before comparing more complex models.
-- [ ] Check the output layer and loss function match binary classification.
-- [ ] Follow one recurrent time step at a time in the manual example.
-- [ ] Compare compatible NumPy and Keras outputs using the same inputs and weights.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
-
-### Task 3 — SimpleRNN review checklist
-
-These points can be used when checking the Task 3 notebook section before submission:
-
-- [ ] Check that the embedding output has the expected sequence dimensions.
-- [ ] Review training and validation curves together.
-- [ ] Read the confusion matrix alongside recall and precision.
-- [ ] Keep the trained model and its metrics associated with the same run.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
-
-### Task 4 — Gradient experiment review checklist
-
-These points can be used when checking the Task 4 notebook section before submission:
-
-- [ ] Explain BPTT before interpreting gradient measurements.
-- [ ] Use consistent logging intervals when comparing gradient norms.
-- [ ] Describe clipping as a stabilization technique rather than a guaranteed accuracy improvement.
-- [ ] Keep sequence-length experiments comparable wherever possible.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
-
-### Task 5 — LSTM review checklist
-
-These points can be used when checking the Task 5 notebook section before submission:
-
-- [ ] Describe the purpose of gates and the cell state in your own words.
-- [ ] Compare the LSTM with SimpleRNN using the same held-out test data.
-- [ ] Record epoch count and runtime as environment-specific observations.
-- [ ] Do not assume a stacked architecture must outperform a single recurrent layer.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
-
-### Task 6 — GRU review checklist
-
-These points can be used when checking the Task 6 notebook section before submission:
-
-- [ ] Explain that GRU uses gates to control information updates.
-- [ ] Compare accuracy, precision, recall, F1, and ROC-AUC together.
-- [ ] Include parameter count and training time when discussing efficiency.
-- [ ] Use the same evaluation split when comparing candidate architectures.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
-
-### Task 7 — Final evaluation review checklist
-
-These points can be used when checking the Task 7 notebook section before submission:
-
-- [ ] Report the chosen threshold used to turn probabilities into labels.
-- [ ] Review false positives and false negatives separately.
-- [ ] Test custom examples that include positive, negative, negation, and ambiguous wording.
-- [ ] State why the final model is recommended and mention any metric where another model wins.
-- [ ] Check that every image path in the README points to a real file in the repository.
-
-**Submission evidence:** keep the relevant printed output, chart, or result table near this part of the notebook so the README and notebook can be checked together.
-
 
 
 ## Example `requirements.txt`
