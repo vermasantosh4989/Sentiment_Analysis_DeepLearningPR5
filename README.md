@@ -15,6 +15,10 @@
 </div>
 
 ---
+## Project Overview Video
+
+Watch the recorded project overview and demonstration: **[▶ Watch the Sentiment Analysis](https://drive.google.com/file/d/1OwQNQ9t5bguGz9fmGuQqE_nSRjvi1CjS/view?usp=drive_link)**
+---
 
 ## Project Summary
 
